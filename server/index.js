@@ -24,8 +24,8 @@ app.use(bodyParser.json())
 app.use(express.json())
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
-var data = fs.readFileSync('./client/src/data/currentUser.json')
-var myObject = JSON.parse(data);
+//var data = fs.readFileSync('./client/src/data/currentUser.json')
+//var myObject = JSON.parse(data);
 const verify = (req, res, next) => {
     const authHeader = req.headers.authorization;
 
